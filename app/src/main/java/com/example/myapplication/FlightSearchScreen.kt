@@ -128,15 +128,15 @@ fun FlightSearchScreen(onBack: () -> Unit) {
         }
 
         when {
-//            showMap -> {
-//                FlightMapScreen(
-//                    flightItem = flightToTrack ?: getDefaultFlightItem(),
-//                    onBack = {
-//                        showMap = false
-//                        flightToTrack = null
-//                    }
-//                )
-//            }
+            showMap -> {
+                FlightMapScreen(
+                    flightItem = flightToTrack ?: getDefaultFlightItem(),
+                    onBack = {
+                        showMap = false
+                        flightToTrack = null
+                    }
+                )
+            }
 
             selectedFlight != null -> {
                 FlightDetailsInline(
