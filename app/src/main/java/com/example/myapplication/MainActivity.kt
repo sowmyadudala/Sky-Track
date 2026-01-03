@@ -77,11 +77,11 @@ class MainActivity : ComponentActivity() {
                         )
                     }
 
-//                    composable("flightSearch") {
-//                        FlightSearchScreen(
-//                            onBack = { navController.popBackStack() }
-//                        )
-//                    }
+                    composable("flightSearch") {
+                        FlightSearchScreen(
+                            onBack = { navController.popBackStack() }
+                        )
+                    }
                 }
             }
         }
